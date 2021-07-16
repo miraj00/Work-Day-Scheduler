@@ -69,3 +69,33 @@ textarea{
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
+
+#currentTimeStyle {
+color : blue;
+font-size: 40px;
+}
+
+#currentDay {
+color : blue;
+font-size: 40px;
+border: 1px solid black;
+text-align: center;
+margin-top: 20px;
+}
+
+#timeBlock { 
+margin: auto;
+border-bottom: grey;
+}
+
+#task { background-color: rgb(197, 194, 194); 
+}
+
+.button {background-color: #20c997;} 
+
+
+.oi {
+  font-size: 25px;
+  align-content: center;
+  }
+  
