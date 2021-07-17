@@ -111,7 +111,7 @@ div.col-10 { background-color: rgb(197, 194, 194) }
   #currentTimeStyle  {
     font-size: 20px;
   }
-  
+
   #task0 {
-    
+  columns="40";
   }
