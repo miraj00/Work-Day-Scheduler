@@ -14,11 +14,12 @@ var task0 = {};
 
 $ (".saveBtn1").click(function() {
     // get form values
-     var taskText = $(#task0).val();
+     var taskText = $("#task0").val();
     
-    tasks.push({ 
-         text: tastText, });
-    localStorage.setItem ("tasks", JSON.stringify(taskText));
+     console.log(taskText);
+//    tasks.push({ 
+//         text: taskText, });
+    localStorage.setItem ("tasks", taskText);
 });
 
 
