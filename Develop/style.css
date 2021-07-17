@@ -98,3 +98,20 @@ div.col-10 { background-color: rgb(197, 194, 194) }
  border-radius: 5px;
 }
 
+@media screen and (max-width: 575px){
+  .display-3 {
+   font-size: 20px;
+}
+
+  .lead {
+    font-size: 10px;
+
+  }
+
+  #currentTimeStyle  {
+    font-size: 20px;
+  }
+  
+  #task0 {
+    
+  }
