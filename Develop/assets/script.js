@@ -1,13 +1,11 @@
+//------------Timer Clock ------------------------------------------------------------------------
 setInterval(function() {
     var currentTime = moment().format('MMMM Do YYYY, h:mm:ss a');
     //console.log(currentTime);
     document.getElementById("currentTimeStyle").innerHTML = currentTime;
   }, 1000);
 
-//----------------- Clear All Button ---------------------------------
-  
-
-
+//----------------- Clear All Button --------------------------------------------------------------
 //-----  function to perform upon button click --------------
 var btnClear = document.querySelector("#clear");
 btnClear.addEventListener('click', clearStorage);
@@ -27,9 +25,6 @@ function clearStorage() {
     location.reload();
 }
   
-
-
-
 //-------------- back-ground color change based on time of the workig hours ----------------------    
 setInterval(function() {
 var t = new Date().getHours();
@@ -72,7 +67,7 @@ setInterval(function() {
             console.log(t);
             if (t > 12 ) {
                task3.style.backgroundColor= "rgb(197, 194, 194)";
-            } else if (t < 11) {
+            } else if (t < 12) {
                task3.style.backgroundColor= "#77dd77";
             } else {
                task3.style.backgroundColor= "#ff6961";
@@ -96,7 +91,7 @@ setInterval(function() {
         console.log(t);
         if (t > 14 ) {
            task5.style.backgroundColor= "rgb(197, 194, 194)";
-        } else if (t < 11) {
+        } else if (t < 14) {
            task5.style.backgroundColor= "#77dd77";
         } else {
            task5.style.backgroundColor= "#ff6961";
@@ -108,7 +103,7 @@ setInterval(function() {
             console.log(t);
             if (t > 15 ) {
                task6.style.backgroundColor= "rgb(197, 194, 194)";
-            } else if (t < 11) {
+            } else if (t < 15) {
                task6.style.backgroundColor= "#77dd77";
             } else {
                task6.style.backgroundColor= "#ff6961";
@@ -120,7 +115,7 @@ setInterval(function() {
     console.log(t);
     if (t > 16 ) {
        task7.style.backgroundColor= "rgb(197, 194, 194)";
-    } else if (t < 10) {
+    } else if (t < 16) {
        task7.style.backgroundColor= "#77dd77";
     } else {
        task7.style.backgroundColor= "#ff6961";
@@ -130,9 +125,9 @@ setInterval(function() {
 setInterval(function() {
         var t = new Date().getHours();
         console.log(t);
-        if (t > 18 ) {
+        if (t > 17 ) {
            task8.style.backgroundColor= "rgb(197, 194, 194)";
-        } else if (t < 11) {
+        } else if (t < 17) {
            task8.style.backgroundColor= "#77dd77";
         } else {
            task8.style.backgroundColor= "#ff6961";
@@ -240,3 +235,5 @@ var data8 = localStorage.getItem("tasks8");
 console.log(data8);
 document.getElementById("task8").innerHTML = data8;
 ////  Stored text need to stay in textarea upon refreshing browser --------------------------
+
+
