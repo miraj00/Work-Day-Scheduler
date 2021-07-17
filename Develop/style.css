@@ -33,27 +33,6 @@ textarea{
   border-top: 1px solid white;;
 }
 
-.hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
-}
-
-.past {
-  background-color: #d3d3d3;
-  color: white;
-}
-
-.present {
-  background-color: #ff6961;
-  color: white;
-}
-
-.future {
-  background-color: #77dd77;
-  color: white;
-}
-
 .saveBtn0, .saveBtn1, .saveBtn2, .saveBtn3, .saveBtn4, .saveBtn5, .saveBtn6, .saveBtn7, .saveBtn8  {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
@@ -74,16 +53,19 @@ color : blue;
 font-size: 40px;
 }
 
-
 #timeBlock { 
 margin: auto;
 border-bottom: grey;
 border-radius: 15px;
 }
 
-#task0, #task1, #task2, #task3, #task4, #task5, #task6, #task7, #task8 { background-color: rgb(197, 194, 194); 
+#task0, #task1, #task2, #task3, #task4, #task5, #task6, #task7, #task8 { 
+  background-color: rgb(197, 194, 194); 
 }
-div.col-10 { background-color: rgb(197, 194, 194) }
+
+div.col-10 { 
+  background-color: rgb(197, 194, 194) 
+}
 
 .oi {
   font-size: 25px;
@@ -98,20 +80,71 @@ div.col-10 { background-color: rgb(197, 194, 194) }
  border-radius: 5px;
 }
 
+
+@media screen and (max-width: 1391px){
+  .display-3 {
+   font-size: 40px;
+}
+  .lead {
+    font-size: 20px;
+  }
+  #currentTimeStyle  {
+    font-size: 40px;
+  }
+  #task0, #task1, #task2, #task3, #task4, #task5, #task6, #task7, #task8  {
+  width: 95%;
+  }
+  .eraseAll  {
+    font-size: 30px;
+  }  
+}
+ 
+
+@media screen and (max-width: 991px){
+  .display-3 {
+   font-size: 40px;
+}
+  .lead {
+    font-size: 20px;
+  }
+  #currentTimeStyle  {
+    font-size: 40px;
+  }
+  #task0, #task1, #task2, #task3, #task4, #task5, #task6, #task7, #task8  {
+  width: 95%;
+  }
+.col-10  {
+  width: 50px;
+}
+.container {
+  width: 80%;
+}
+.eraseAll  {
+  font-size: 25px;
+}  
+}
+
 @media screen and (max-width: 575px){
   .display-3 {
    font-size: 20px;
 }
-
   .lead {
     font-size: 10px;
-
   }
-
   #currentTimeStyle  {
     font-size: 20px;
   }
-
-  #task0 {
-  columns="40";
+  #task0, #task1, #task2, #task3, #task4, #task5, #task6, #task7, #task8 {
+  width: 95%;
   }
+div.col-10  {
+  width: 40%;
+}
+.container {
+  width: 80%;
+  }
+.eraseAll  {
+  font-size: 20px;
+}  
+
+}
