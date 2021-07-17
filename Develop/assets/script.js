@@ -4,6 +4,31 @@ setInterval(function() {
     document.getElementById("currentTimeStyle").innerHTML = currentTime;
   }, 1000);
 
+//----------------- Clear All Button ---------------------------------
+  
+
+
+//-----  function to perform upon button click --------------
+var btnClear = document.querySelector("#clear");
+btnClear.addEventListener('click', clearStorage);
+
+function clearStorage() {
+    localStorage.clear();  
+    task0.hidden = true;
+    task1.hidden = true;
+    task2.hidden = true;
+    task3.hidden = true;
+    task4.hidden = true;
+    task5.hidden = true;
+    task6.hidden = true;
+    task7.hidden = true;
+    task8.hidden = true;
+
+    location.reload();
+}
+  
+
+
 
 //-------------- back-ground color change based on time of the workig hours ----------------------    
 setInterval(function() {
@@ -215,10 +240,3 @@ var data8 = localStorage.getItem("tasks8");
 console.log(data8);
 document.getElementById("task8").innerHTML = data8;
 ////  Stored text need to stay in textarea upon refreshing browser --------------------------
-
-
-
-
-// the text are changes color as time goes from 9 am to 5pm 
-
-
