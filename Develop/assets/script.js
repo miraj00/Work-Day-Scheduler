@@ -4,7 +4,117 @@ setInterval(function() {
     document.getElementById("currentTimeStyle").innerHTML = currentTime;
   }, 1000);
 
-    
+
+//-------------- back-ground color change based on time of the workig hours ----------------------    
+setInterval(function() {
+var t = new Date().getHours();
+console.log(t);
+if (t > 9 ) {
+   task0.style.backgroundColor = "rgb(197, 194, 194)";
+} else if (t < 9) {
+   task0.style.backgroundColor= "#77dd77";
+} else {
+   task0.style.backgroundColor= "#ff6961";
+}
+}, 1000);
+
+setInterval(function() {
+    var t = new Date().getHours();
+    console.log(t);
+    if (t > 10 ) {
+       task1.style.backgroundColor= "rgb(197, 194, 194)";
+    } else if (t < 10) {
+       task1.style.backgroundColor= "#77dd77";
+    } else {
+       task1.style.backgroundColor= "#ff6961";
+    }
+    }, 1000);
+
+setInterval(function() {
+        var t = new Date().getHours();
+        console.log(t);
+        if (t > 11 ) {
+           task2.style.backgroundColor= "rgb(197, 194, 194)";
+        } else if (t < 11) {
+           task2.style.backgroundColor= "#77dd77";
+        } else {
+           task2.style.backgroundColor= "#ff6961";
+        }
+        }, 1000); 
+
+setInterval(function() {
+            var t = new Date().getHours();
+            console.log(t);
+            if (t > 12 ) {
+               task3.style.backgroundColor= "rgb(197, 194, 194)";
+            } else if (t < 11) {
+               task3.style.backgroundColor= "#77dd77";
+            } else {
+               task3.style.backgroundColor= "#ff6961";
+            }
+            }, 1000);     
+
+setInterval(function() {
+    var t = new Date().getHours();
+    console.log(t);
+    if (t > 13 ) {
+       task4.style.backgroundColor= "rgb(197, 194, 194)";
+    } else if (t < 13) {
+       task4.style.backgroundColor= "#77dd77";
+    } else {
+       task4.style.backgroundColor= "#ff6961";
+    }
+    }, 1000);
+
+setInterval(function() {
+        var t = new Date().getHours();
+        console.log(t);
+        if (t > 14 ) {
+           task5.style.backgroundColor= "rgb(197, 194, 194)";
+        } else if (t < 11) {
+           task5.style.backgroundColor= "#77dd77";
+        } else {
+           task5.style.backgroundColor= "#ff6961";
+        }
+        }, 1000); 
+
+setInterval(function() {
+            var t = new Date().getHours();
+            console.log(t);
+            if (t > 15 ) {
+               task6.style.backgroundColor= "rgb(197, 194, 194)";
+            } else if (t < 11) {
+               task6.style.backgroundColor= "#77dd77";
+            } else {
+               task6.style.backgroundColor= "#ff6961";
+            }
+            }, 1000);
+
+setInterval(function() {
+    var t = new Date().getHours();
+    console.log(t);
+    if (t > 16 ) {
+       task7.style.backgroundColor= "rgb(197, 194, 194)";
+    } else if (t < 10) {
+       task7.style.backgroundColor= "#77dd77";
+    } else {
+       task7.style.backgroundColor= "#ff6961";
+    }
+    }, 1000);
+
+setInterval(function() {
+        var t = new Date().getHours();
+        console.log(t);
+        if (t > 18 ) {
+           task8.style.backgroundColor= "rgb(197, 194, 194)";
+        } else if (t < 11) {
+           task8.style.backgroundColor= "#77dd77";
+        } else {
+           task8.style.backgroundColor= "#ff6961";
+        }
+        }, 1000); 
+
+
 //  text written in text area need to store in local storage upon pressing store icon
 //----------------------9 AM task ------------------------------------------
  // Save in localstorage ---
@@ -105,11 +215,6 @@ var data8 = localStorage.getItem("tasks8");
 console.log(data8);
 document.getElementById("task8").innerHTML = data8;
 ////  Stored text need to stay in textarea upon refreshing browser --------------------------
-
-
-
-
-
 
 
 
